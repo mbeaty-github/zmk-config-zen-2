@@ -25,7 +25,7 @@ behaviors {
     bindings = <&kp H>, <&kp ]>, <&kp }>;
                 };
         };
-};
+
   
 &mt{
   tapping-term-ms = <200ms>;
