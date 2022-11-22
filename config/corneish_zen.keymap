@@ -8,7 +8,16 @@
     //zmk,matrix_transform = &five_column_transform;
   };
 
-behaviors {
+  
+&mt{
+  tapping-term-ms = <200ms>;
+};
+
+
+
+/ {
+
+    behaviors {
   td0: tap_dance_0 {
       compatible = "zmk,behavior-tap-dance";
       label = "TAP_DANCE_0";
@@ -24,14 +33,8 @@ behaviors {
     bindings = <&kp H>, <&kp RBKT>, <&kp RBRC>;
                 };
         };
-  
-&mt{
-  tapping-term-ms = <200ms>;
-        };
-};
 
-
-/ {
+        
         keymap {
                 compatible = "zmk,keymap";
 
