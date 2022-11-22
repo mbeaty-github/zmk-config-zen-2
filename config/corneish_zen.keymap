@@ -15,7 +15,7 @@ behaviors {
       label = "TAP_DANCE_0";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp G>, <&kp [>, <&kp "{">;
+      bindings = <&kp G>, <&kp "[">, <&kp "{">;
       };
   td1: tap_dance_1 {
     compatible = "zmk,behavior-tap-dance";
