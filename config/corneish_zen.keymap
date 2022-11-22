@@ -8,7 +8,7 @@
     //zmk,matrix_transform = &five_column_transform;
   };
 
-
+/ {
 behaviors {
   td0: tap_dance_0 {
       compatible = "zmk,behavior-tap-dance";
