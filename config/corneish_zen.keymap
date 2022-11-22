@@ -8,15 +8,12 @@
     //zmk,matrix_transform = &five_column_transform;
   };
 
-};
+
 
 &mt{
   tapping-term-ms = <200ms>;
 };
 
-
-
-/ {
 
     behaviors {
   td0: tap_dance_0 {
