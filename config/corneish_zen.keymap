@@ -59,7 +59,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
  &trans     &kp N1       &kp N2   &kp N3    &kp N4   &kp N5       &kp N6   &kp N7    &kp N8  &kp N9    &kp N0 &kp BSPC
- &bt BT_CLR &bt BT_NXT   &trans   &trans    &kp LFT  &kp RIGHT    &kp UP   &kp DOWN  &trans  &trans    &trans &trans
+ &bt BT_CLR &bt BT_NXT   &trans   &trans    &kp LEFT  &kp RIGHT    &kp UP   &kp DOWN  &trans  &trans    &trans &trans
  &trans     &trans       &trans   &trans    &trans   &trans       &trans   &trans    &trans  &trans    &trans &trans
                                   &kp LGUI  &to 2   &trans       &trans   &trans    &kp RALT
                         >;
