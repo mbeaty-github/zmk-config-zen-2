@@ -7,12 +7,12 @@
     zmk,matrix_transform = &default_transform;
     //zmk,matrix_transform = &five_column_transform;
   };
-
-
-
-&mt{
-  tapping-term-ms = <200ms>;
 };
+
+/{
+        &mt{
+        tapping-term-ms = <200ms>;
+        };
 
 
 //     behaviors {
