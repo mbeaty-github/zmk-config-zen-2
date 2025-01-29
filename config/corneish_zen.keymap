@@ -56,7 +56,7 @@ studio_unlock: tap_dance_studio {
     label = "STUDIO_UNLOCK";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&kp LC(LS(L))>;
+    bindings = <&studio_unlock>;
 };
         keymap {
                 compatible = "zmk,keymap";
