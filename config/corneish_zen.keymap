@@ -51,13 +51,7 @@ mo_tog: behavior_mo_tog {
         bindings = <&mo>, <&tog>;
                 };
         };
-studio_unlock: tap_dance_studio {
-    compatible = "zmk,behavior-tap-dance";
-    label = "STUDIO_UNLOCK";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&studio_unlock>;
-};
+
         keymap {
                 compatible = "zmk,keymap";
 
