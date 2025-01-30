@@ -1,13 +1,26 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+      url-base: https://github.com/LOWPROKB
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: corne-ish-zen-v2
       import: app/west.yml
   self:
     path: config
+
+# ZMK Studio config for later use
+# manifest:
+#   remotes:
+#     - name: zmkfirmware
+#       url-base: https://github.com/zmkfirmware
+#     # Additional modules containing boards/shields/custom code can be listed here as well
+#     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+#   projects:
+#     - name: zmk
+#       remote: zmkfirmware
+#       revision: main
+#       import: app/west.yml
+#   self:
+#     path: config
