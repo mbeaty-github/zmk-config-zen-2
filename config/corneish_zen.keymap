@@ -20,28 +20,28 @@ td0: tap_dance_0 {
       compatible = "zmk,behavior-tap-dance";
       label = "TAP_DANCE_0";
       #binding-cells = <0>;
-      tapping-term-ms = <150>;
+      tapping-term-ms = <200>;
       bindings = <&kp G>, <&kp LBKT>, <&kp LBRC>;
       };
 td1: tap_dance_1 {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_1";
     #binding-cells = <0>;
-    tapping-term-ms = <150>;
+    tapping-term-ms = <200>;
     bindings = <&kp H>, <&kp RBKT>, <&kp RBRC>;
                 };
 td2: tap_dance_2 {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_2";
     #binding-cells = <0>;
-    tapping-term-ms = <125>;
+    tapping-term-ms = <200>;
     bindings = <&kp T>, <&kp EQUAL>, <&kp PLUS>;
                 };
 td3: tap_dance_3 {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_3";
     #binding-cells = <0>;
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
     bindings = <&kp Y>, <&kp MINUS>, <&kp UNDER>;
                 };
 
