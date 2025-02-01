@@ -21,7 +21,6 @@ td0: tap_dance_0 {
       label = "TAP_DANCE_0";
       #binding-cells = <0>;
       tapping-term-ms = <280>;
-      flavor = "tap-preferred";
       bindings = <&kp G>, <&kp LBKT>, <&kp LBRC>;
       };
 td1: tap_dance_1 {
@@ -29,7 +28,6 @@ td1: tap_dance_1 {
     label = "TAP_DANCE_1";
     #binding-cells = <0>;
     tapping-term-ms = <280>;
-    flavor = "tap-preferred";
     bindings = <&kp H>, <&kp RBKT>, <&kp RBRC>;
                 };
 td2: tap_dance_2 {
@@ -37,7 +35,6 @@ td2: tap_dance_2 {
     label = "TAP_DANCE_2";
     #binding-cells = <0>;
     tapping-term-ms = <280>;
-    flavor = "tap-preferred";
     bindings = <&kp T>, <&kp EQUAL>, <&kp PLUS>;
                 };
 td3: tap_dance_3 {
@@ -45,7 +42,6 @@ td3: tap_dance_3 {
     label = "TAP_DANCE_3";
     #binding-cells = <0>;
     tapping-term-ms = <280>;
-    flavor = "tap-preferred";
     bindings = <&kp Y>, <&kp MINUS>, <&kp UNDER>;
                 };
 
