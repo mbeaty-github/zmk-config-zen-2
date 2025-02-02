@@ -20,6 +20,7 @@
         combo_to_layer {
             timeout-ms = <100>;
             key-positions = <1 10>;
+            layers = <0>;
             bindings = <&to 3>;
         };
     };
