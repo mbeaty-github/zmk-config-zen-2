@@ -18,8 +18,9 @@
         compatible = "zmk,combos";
         combo_to_layer {
             timeout-ms = <50>;
-            key-positions = <1, 16>;
-            bindings = <&mo mouse_layer>;
+            key-positions = <1 16>;
+            layers = <0>;
+            bindings = <&to mouse_layer>;
         };
     };
 };
