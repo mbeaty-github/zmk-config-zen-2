@@ -13,6 +13,16 @@
 };
 
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_to_layer {
+            timeout-ms = <50>;
+            key-positions = <1, 16>;
+            bindings = <&mo mouse_layer>;
+        };
+    };
+};
 
 / {
     behaviors {
@@ -127,7 +137,7 @@ mo_tog: behavior_mo_tog {
                     	     &kp LGUI   &to 0    &trans      &trans    &trans    &kp RALT
                         >;
                 };
-                raise_layer {
+                mouse_layer {
                         label = "MOUSE";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -135,10 +145,10 @@ mo_tog: behavior_mo_tog {
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp   &kp      &kp    &kp      &kp      &kp         &kp CARET        &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &kp RPAR           &kp BSPC
-   &kp   &trans   &trans &trans   &trans   &trans      &msc SCRL_LEFT   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &msc SCRL_RIGHT    &kp GRAVE
-   &mt   &trans   &trans &trans   &trans   &trans      &kp UNDER        &msc SCRL_UP     &kp LBRC         &msc SCRL_DOWN    &kp PIPE           &kp TILDE
-                       &kp LGUI   &to 0    &trans      &trans           &trans           &kp RALT
+   &none   &none   &none  &none   &none   &none      &trans           &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &trans             &trans
+   &none   &none   &none  &none   &none   &none      &msc SCRL_LEFT   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &msc SCRL_RIGHT    &trans
+   &none   &none   &none  &none   &none   &none      &kp UNDER        &msc SCRL_UP     &kp LBRC         &msc SCRL_DOWN    &trans             &trans
+                          &none   &none   &none      &trans           &trans           &trans
                         >;
                 };
         };
