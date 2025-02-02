@@ -24,21 +24,21 @@
             bindings = <&to 3>;
         };
         compatible = "zmk,combos";
-        combo_to_layer {
+        combo_cut {
             timeout-ms = <100>;
             key-positions = <5 6>;
             layers = <0>;
             bindings = <&K_CUT>;
         };
         compatible = "zmk,combos";
-        combo_to_layer {
+        combo_copy {
             timeout-ms = <100>;
             key-positions = <17 18>;
             layers = <0>;
             bindings = <&K_COPY>;
         };
         compatible = "zmk,combos";
-        combo_to_layer {
+        combo_paste {
             timeout-ms = <100>;
             key-positions = <29 30>;
             layers = <0>;
