@@ -124,6 +124,18 @@ td6: tap_dance_6 {
     tapping-term-ms = <150>;
     bindings = <&kp FSLH>, <&kp BSLH>;
                 };
+  slsh: fslash_bslash {
+      compatible = "zmk,behavior-hold-tap";
+      label = "FSLSH_BSLSH";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <280>;
+      quick-tap-ms = <175>;
+      require-prior-idle-ms = <150>;
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <KEYS_R KEYS_L>;
+      hold-trigger-on-release;
+  };
 td7: tap_dance_7 {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_7";
@@ -181,7 +193,7 @@ mo_tog: behavior_mo_tog {
                         bindings = <
    &kp ESC              &kp Q          &kp W         &kp E                 &kp R                     &td2      &td3      &kp U                     &kp I                &kp O         &kp P             &kp BSPC
    &caps_word           &hml LCTRL A   &hml LALT S   &hml LC(LS(LALT)) D   &hml LC(LS(LA(LGUI))) F   &td0      &td1      &hmr LC(LS(LA(LGUI))) J   &hmr LC(LS(LALT)) K  &hmr LALT L   &hmr LCTRL SEMI   &td7
-   &mt LSHFT LPAR       &kp Z          &kp X         &kp C                 &kp V                     &kp B     &kp N     &kp M                     &kp COMMA            &kp DOT       &td6              &mt RSHFT RPAR
+   &mt LSHFT LPAR       &kp Z          &kp X         &kp C                 &kp V                     &kp B     &kp N     &kp M                     &kp COMMA            &kp DOT       &slsh FSLH BSLH   &mt RSHFT RPAR
                                                      &kp LGUI              &mo_tog 1 1               &kp TAB   &kp SPC   &kp RET                   &td4
                         >;
                 };
