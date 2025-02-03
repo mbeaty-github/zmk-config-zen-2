@@ -145,14 +145,14 @@ td6: tap_dance_6 {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_6";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <150>;
     bindings = <&kp FSLH>, <&kp BSLH>;
                 };
 td7: tap_dance_7 {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_7";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <150>;
     bindings = <&kp SQT>, <&kp PIPE>;
                 };
 
