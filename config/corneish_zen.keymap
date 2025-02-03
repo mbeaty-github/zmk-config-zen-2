@@ -119,14 +119,14 @@ td4: tap_dance_4 {
     label = "TAP_DANCE_4";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&kp C_AC_UNDO>, <&kp C_AC_REDO>;
+    bindings = <&kp LC(Z)>, <&kp LC(Y)>;
                 };
 td5: tap_dance_5 {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_5";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&kp K_COPY>, <&kp K_CUT>, <&kp K_PASTE>;
+    bindings = <&kp LC(C)>, <&kp LC(X)>, <&kp LC(V)>;
                 };
 
 mo_tog: behavior_mo_tog {
