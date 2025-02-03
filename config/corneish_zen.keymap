@@ -28,7 +28,7 @@
         
         combo_cut {
             timeout-ms = <100>;
-            key-positions = <5 6>;
+            key-positions = <37 5 6>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&kp C_NEXT>;
@@ -36,7 +36,7 @@
         
         combo_copy {
             timeout-ms = <100>;
-            key-positions = <17 18>;
+            key-positions = <37 17 18>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&kp C_PLAY_PAUSE>;
@@ -44,55 +44,58 @@
         
         combo_paste {
             timeout-ms = <100>;
-            key-positions = <29 30>;
+            key-positions = <37 29 30>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&kp C_PREV>;
         };
         combo_BT1 {
             timeout-ms = <100>;
-            key-positions = <29 1>;
+            key-positions = <37 29 1>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&bt BT_SEL 0>;
         };
         combo_BT2 {
             timeout-ms = <100>;
-            key-positions = <29 2>;
+            key-positions = <37 29 2>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&bt BT_SEL 1>;
         };
         combo_BT3 {
             timeout-ms = <100>;
-            key-positions = <29 3>;
+            key-positions = <37 29 3>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&bt BT_SEL 2>;
         };
         combo_BT4 {
             timeout-ms = <100>;
-            key-positions = <29 4>;
+            key-positions = <37 29 4>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&bt BT_SEL 3>;
         };
         combo_BT5 {
             timeout-ms = <100>;
-            key-positions = <29 5>;
+            key-positions = <37 29 5>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&bt BT_SEL 4>;
         };
         combo_CLR {
             timeout-ms = <100>;
-            key-positions = <29 11>;
+            key-positions = <37 29 11>;
             layers = <0>;
             require-prior-idle-ms = <300>;
             bindings = <&bt BT_CLR>;
         };
     };
 };
+
+
+
 
 / {
     behaviors {
@@ -172,6 +175,12 @@ mo_tog: behavior_mo_tog {
       hold-trigger-key-positions = <KEYS_L THUMBS>;
       hold-trigger-on-release;
   };
+m_esc: mouse_escape {
+			compatible = "zmk,behavior-caps-word";
+			label = "MOUSE_ESCAPE";
+			#binding-cells = <0>;
+      layers = <3>;
+		};
 
         };
 
@@ -229,10 +238,10 @@ mo_tog: behavior_mo_tog {
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &none            &none   &none   &none   &none   &none      &trans           &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &trans             &trans
-   &none            &trans  &trans  &trans  &trans  &none      &msc SCRL_LEFT   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &msc SCRL_RIGHT    &trans
-   &studio_unlock   &none   &none   &none   &none   &none      &trans           &msc SCRL_UP     &msc MCLK        &msc SCRL_DOWN    &trans             &trans
-                            &trans  &to 0   &none              &trans           &trans           &trans
+   &none            &none   &none   &none   &none   &none      &none            &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &trans             &trans
+   &trans           &trans  &trans  &trans  &trans  &trans     &msc SCRL_LEFT   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &msc SCRL_RIGHT    &trans
+   &studio_unlock   &trans  &trans  &trans  &trans  &trans     &trans           &msc SCRL_UP     &msc MCLK        &msc SCRL_DOWN    &trans             &trans
+                            &trans  &to 0   &trans             &trans           &trans           &trans
                         >;
                 };
         };
