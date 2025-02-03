@@ -25,30 +25,6 @@
             require-prior-idle-ms = <300>;
             bindings = <&to 3>;
         };
-        
-        combo_cut {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-            layers = <0>;
-            require-prior-idle-ms = <300>;
-            bindings = <&kp C_NEXT>;
-        };
-        
-        combo_copy {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            layers = <0>;
-            require-prior-idle-ms = <200>;
-            bindings = <&kp C_PLAY_PAUSE>;
-        };
-        
-        combo_paste {
-            timeout-ms = <50>;
-            key-positions = <29 30>;
-            layers = <0>;
-            require-prior-idle-ms = <200>;
-            bindings = <&kp C_PREV>;
-        };
         combo_BT1 {
             timeout-ms = <50>;
             key-positions = <29 0>;
