@@ -51,35 +51,35 @@
         };
         combo_BT1 {
             timeout-ms = <50>;
-            key-positions = <29 1>;
+            key-positions = <29 0>;
             layers = <0>;
             require-prior-idle-ms = <200>;
             bindings = <&bt BT_SEL 0>;
         };
         combo_BT2 {
             timeout-ms = <50>;
-            key-positions = <29 2>;
+            key-positions = <29 1>;
             layers = <0>;
             require-prior-idle-ms = <200>;
             bindings = <&bt BT_SEL 1>;
         };
         combo_BT3 {
             timeout-ms = <50>;
-            key-positions = <29 3>;
+            key-positions = <29 2>;
             layers = <0>;
             require-prior-idle-ms = <200>;
             bindings = <&bt BT_SEL 2>;
         };
         combo_BT4 {
             timeout-ms = <50>;
-            key-positions = <29 4>;
+            key-positions = <29 3>;
             layers = <0>;
             require-prior-idle-ms = <200>;
             bindings = <&bt BT_SEL 3>;
         };
         combo_BT5 {
             timeout-ms = <50>;
-            key-positions = <29 5>;
+            key-positions = <29 4>;
             layers = <0>;
             require-prior-idle-ms = <200>;
             bindings = <&bt BT_SEL 4>;
@@ -88,7 +88,7 @@
             timeout-ms = <50>;
             key-positions = <29 11>;
             layers = <0>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <200>;
             bindings = <&bt BT_CLR>;
         };
     };
