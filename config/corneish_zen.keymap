@@ -119,7 +119,7 @@ td4: tap_dance_4 {
     label = "TAP_DANCE_4";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&kp K_UNDO>, <&kp K_REDO>;
+    bindings = <&kp C_AC_UNDO>, <&kp C_AC_REDO>;
                 };
 td5: tap_dance_5 {
     compatible = "zmk,behavior-tap-dance";
