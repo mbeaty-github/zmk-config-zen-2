@@ -175,12 +175,6 @@ mo_tog: behavior_mo_tog {
       hold-trigger-key-positions = <KEYS_L THUMBS>;
       hold-trigger-on-release;
   };
-m_esc: mouse_escape {
-			compatible = "zmk,behavior-caps-word";
-			label = "MOUSE_ESCAPE";
-			#binding-cells = <0>;
-      layers = <3>;
-		};
 
         };
 
