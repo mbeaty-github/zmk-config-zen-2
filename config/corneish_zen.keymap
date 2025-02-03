@@ -29,21 +29,57 @@
             timeout-ms = <100>;
             key-positions = <5 6>;
             layers = <0>;
-            bindings = <&kp K_CUT>;
+            bindings = <&kp K_NEXT>;
         };
         
         combo_copy {
             timeout-ms = <100>;
             key-positions = <17 18>;
             layers = <0>;
-            bindings = <&kp K_COPY>;
+            bindings = <&kp K_PLAY_PAUSE>;
         };
         
         combo_paste {
             timeout-ms = <100>;
             key-positions = <29 30>;
             layers = <0>;
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp K_PREV>;
+        };
+        combo_BT1 {
+            timeout-ms = <100>;
+            key-positions = <29 1>;
+            layers = <0>;
+            bindings = <&bt BT_SEL 1>;
+        };
+        combo_BT2 {
+            timeout-ms = <100>;
+            key-positions = <29 2>;
+            layers = <0>;
+            bindings = <&bt BT_SEL 2>;
+        };
+        combo_BT3 {
+            timeout-ms = <100>;
+            key-positions = <29 3>;
+            layers = <0>;
+            bindings = <&bt BT_SEL 3>;
+        };
+        combo_BT4 {
+            timeout-ms = <100>;
+            key-positions = <29 4>;
+            layers = <0>;
+            bindings = <&bt BT_SEL 4>;
+        };
+        combo_BT5 {
+            timeout-ms = <100>;
+            key-positions = <29 5>;
+            layers = <0>;
+            bindings = <&bt BT_SEL 5>;
+        };
+        combo_CLR {
+            timeout-ms = <100>;
+            key-positions = <29 11>;
+            layers = <0>;
+            bindings = <&bt BT_CLR>;
         };
     };
 };
@@ -163,17 +199,17 @@ mo_tog: behavior_mo_tog {
                 };
 
                 raise_layer {
-                        label = "SYMBOL";
+                        label = "Function";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC     &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp CAPS    &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &mt LSHFT LPAR &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI   &to 0    &trans      &trans    &trans    &kp RALT
+   &kp ESC          &kp EXCL  &kp AT   &kp HASH   &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+   &kp CAPS         &trans    &trans   &trans     &trans     &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+   &mt LSHFT LPAR   &trans    &trans   &trans     &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                    	        &kp LGUI   &to 0    &trans     &trans       &trans     &kp RALT
                         >;
                 };
                 mouse_layer {
