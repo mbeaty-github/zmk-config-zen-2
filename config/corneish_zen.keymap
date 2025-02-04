@@ -62,7 +62,7 @@
         };
         combo_CLR {
             timeout-ms = <100>;
-            key-positions = <29 11>;
+            key-positions = <29 37 11>;
             layers = <0>;
             require-prior-idle-ms = <200>;
             bindings = <&bt BT_CLR>;
