@@ -61,7 +61,7 @@
             bindings = <&bt BT_SEL 4>;
         };
         combo_CLR {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <29 11>;
             layers = <0>;
             require-prior-idle-ms = <200>;
